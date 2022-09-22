@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="st169656.client.controllers.MailDetailController">
+    <children>
+        <TextArea fx:id="mail_content" editable="false" layoutX="13.0" layoutY="91.0" prefHeight="282.0" prefWidth="375.0" style="-fx-background-color: #00000000; -fx-border-color: #00000000;">
+        </TextArea>
+        <ImageView fx:id="mail_pic" blendMode="DARKEN" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/img/account.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="mail_subject" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="65.0" prefHeight="26.0" prefWidth="375.0" text="Subject" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <Label fx:id="mail_name" layoutX="84.0" layoutY="14.0" prefHeight="26.0" prefWidth="250.0" text="MyAccount">
+        </Label>
+        <Label fx:id="mail_address" layoutX="84.0" layoutY="39.0" prefHeight="26.0" prefWidth="250.0" text="myaccount@myfabmail.me" underline="true">
+        </Label>
+        <Label fx:id="mail_date" alignment="CENTER" layoutX="183.0" layoutY="373.0" prefHeight="27.0" prefWidth="203.0" text="Today@11.13" textAlignment="CENTER">
+        </Label>
+    </children>
+</AnchorPane>
